@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Listing</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script type="module" src="/src/js/ui/post/view.js"></script>
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+  <div class="container my-5">
+    <h2 id="title">Listing Title</h2>
+    <p id="description">Listing Description</p>
+    <p><strong>Starting Bid:</strong> $<span id="startingBid"></span></p>
+    <p><strong>Current Highest Bid:</strong> $<span id="highestBid">N/A</span></p>
+    <form id="bidForm">
+      <div class="mb-3">
+        <label for="bidAmount" class="form-label">Enter Your Bid</label>
+        <input type="number" id="bidAmount" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Place Bid</button>
+    </form>
+  </div>
+</body>
+</html>
